@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/01b6aa7144.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+ <div id="header">
+ <div class="container">
+ <nav>
+ <img src="file:///C:/Users/91939/Desktop/images/Logo1.jpg" class="logo">
+ <ul>
+ <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+   <li><a href="#">Services</a></li>
+	 <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<div class="header-text">
+<p>Front-End Developer</p>
+<h1>Hi, I'm <span>Chintha Rithvik</span><br>Kumar Reddy From India</h1>
+</div>
+ </div>
+ </div>
+<!------------ About -------------->
+ <div id="about">
+ <div class="container">
+ <div class="row">
+ <div class="about-col-1">
+ <img src="file:///C:/Users/91939/Desktop/images/user.png">
+ </div>
+ <div class="about-col-2">
+ <h1 class="sub-title">About Me</h1>
+ <p>I am an enthusiastic about applying my theoretical knowledge and technical skills in the field of desiging and maintenance to carer to the specific needs of the people and i love learning, exploring and building new things to contribute on innovative projects in a collaborative environment.</p>
+ <div class="tab-titles">
+ <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+  <p class="tab-links" onclick="opentab('education')">Education</p>
+   <p class="tab-links" onclick="opentab('internship')">Internship</p>
+ </div>
+ <div class="tab-contents active-tab" id="skills">
+	<ul>
+	<li><span>JAVA</span><br>Coding-web applications</li>
+		<li><span>HTML</span><br>Desining static web pages </li>
+			<li><span>CSS</span><br>Style and layout web pages</li>
+				<li><span>JAVA SCRIPT</span><br>Develop web pages</li>
+				   <li><span>ORACLE DATABASE</span><br>Collection of data</li>
+	</ul>
+ </div>
+ <div class="tab-contents" id="education">
+	<ul>
+	<li><span>2019-2023</span><br>B-Tech(Electronics & Communication Engineering) </br><br>Karunya Institute Of Technology And Sciences </br><br>CGPA : 6.75</li>
+		<li><span>2017-2019</span><br>Intermediate(M.P.C)</br><br>Sri Chaitanya Junior College</br><br>CGPA : 7.67 </li>
+			<li><span>2016-2017</span><br>S.S.C</br><br>Sri Chaitanya Techno School </br><br>CGPA : 9.5</li>
+	</ul>
+ </div>
+<div class="tab-contents" id="internship">
+	<ul>
+	<li><span>Introduction on Generative AI by Google cloud</span><br>Cousera</li>
+		<li><span>Cybersecurity For Everyone by University of Maryland</span><br>Cousera</li>
+			<li><span>Web Development</span><br>Internshala</li>
+			    <li><span>Full Stack Java </span><br>Naresh IT</li>
+	</ul>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <!---- -------services-------------------- ---->
+
+ <div id="services>
+   <div class="container">
+       <h1 class="sub-title">My Services</h1>
+	   <div class="services-list">
+            <div>
+			<i class="fa-solid fa-cart-shopping"></i>
+			<h2>Console Based Paytm Replica Using Java</h2> 
+			<p>Implemented a console-based Paytm replica utilizing arrays, ArrayLists, loops, and switches for efficient data handling. Developed features like mobile recharges, movie bookings etc. Created a dynamic console interface that seamlessly integrates loops and switches to enhance user interaction</p>
+			<a href="#"> Learn more</a>
+			</div>
+			<div>
+			<i class="fa-solid fa-water"></i>
+			<h2>Water Level Indicator with 8051 Microcontroller</h2> 
+			<p>Water Level Controller using 8051 Microcontroller.Initially when the tank is empty, LCD will display the message LOW and motor runs automatically. When water level reaches to half level, now LCD displays HALF and still motor runs.When the tank is full, LCD displays FULL and motor automatically stops. Again,the motor runs when water level in the tank becomes LOW. We can avoid the overflow of the water. </p>
+			<a href="#"> Learn more</a>
+			</div>
+			<div>
+            <i class="fa-solid fa-tower-cell"></i>
+			<h2>Microstrip Patch Antenna for Brain Canacer Detection</h2> 
+			<p>“Microstrip Patch Antenna for Brain Cancer Detection” we observes the return loss, voltage standing wave ratio and radiation pattern in human head phantom model and the results will compared with brain cancer tumor and we develop microstrip patch antenna with an operating frequency of 7.3 GHZ. we used the software for this project is  Ansys HFSS (High frequency structure simulate) </p>
+			<a href="#"> Learn more</a>
+			</div>
+	   </div>
+   </div>
+  </div>
+  <!---------------Contact------------------>
+  <div id="contact">
+  <div class="container">
+  <div class="row">
+  <div class="contact-left">
+	<h1 class="sub-title">Contact Me</h1>&nbsp;
+	<p><i class="fa-solid fa-paper-plane"></i>chintharithvik28@gmail.com</p>
+	<p><i class="fa-solid fa-square-phone"></i>9390122270</p>
+	<div class="social-icons">
+		<a href="https://www.linkedin.com/in/rithvik-kumar-reddy-chintha-90050b225/"><i class="fa-brands fa-linkedin"></i></a>
+	</div>
+  </div>
+  </div>
+  </div>
+  </div>
+<script>
+
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+	for(tablink of tablinks)
+	{
+		tablink.classList.remove("active-link");	
+	}
+	for(tabcontent of tabcontents)
+	{
+		tabcontent.classList.remove("active-tab");
+	}
+	event.currentTarget.classList.add("active-link");
+	document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+ </body>
+</html>
